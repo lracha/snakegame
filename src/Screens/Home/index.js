@@ -1,4 +1,4 @@
-import { Container,  TopContainer, Image, CButton,  Title } from "./styles"
+import { Container, CButton,  Title } from "./styles"
 import { View } from "react-native"
 
 

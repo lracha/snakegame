@@ -1,7 +1,6 @@
 
 import styled from "styled-components/native"
 import { Ionicons } from "@expo/vector-icons"
-import Text from "../../Text"
 
 export const Container = styled.TouchableOpacity`
     margin-top:  ${props => props.theme.metrics.padding};
