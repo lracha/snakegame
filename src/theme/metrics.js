@@ -15,8 +15,8 @@ export default {
         iconSize: "24px"
     },
     miniButton: {
-        width: "240px",
-        height: "80px",
+        width: "100px",
+        height: "56px",
         borderBottomWidth: "4px",
         borderRadius: "12px",
         iconSize: "24px"

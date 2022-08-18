@@ -11,7 +11,7 @@ export default function Body({ elements, position, size }) {
         position: "absolute",
         left: el[0] * size,
         top: el[1] * size,
-        backgroundColor: "blue",
+        backgroundColor: "#497A45",
       }}
     />
   ));

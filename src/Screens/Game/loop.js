@@ -3,7 +3,7 @@ const randomPositions = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-export default function GameLoop(entities, { events, dispatch }) {
+export default function Loop(entities, { events, dispatch }) {
 
   const head = entities.head;
   const food = entities.food;
@@ -52,7 +52,6 @@ export default function GameLoop(entities, { events, dispatch }) {
       head.position[0] += head.xdirection;
       head.position[1] += head.ydirection;
       body.elements.forEach((el, idx) => {
-        console.log({ el, idx });
         if (
           head.position[0] === el[0] &&
           head.position[1] === el[1] 
@@ -63,6 +62,8 @@ export default function GameLoop(entities, { events, dispatch }) {
         head.position[0] == food.position[0] &&
         head.position[1] == food.position[1]
       ) {
+        
+        head.updateSpeed -= 1
         body.elements = [
           [head.position[0], head.position[1]],
           ...body.elements,

@@ -1,6 +1,6 @@
 
 import styled from "styled-components/native"
-import Button from "../../components/Buttons/Button"
+import Button from "../../Buttons/button"
 
 
 export const Container = styled.View`

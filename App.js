@@ -4,8 +4,8 @@ import { useFonts,PressStart2P_400Regular } from '@expo-google-fonts/press-start
 import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components/native';
 import Theme from './src/theme';
-import Home from './src/screens/Home';
-import Game from './src/screens/Game';
+import Home from './src/Screens/Home';
+import Game from './src/Screens/Game';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,7 +22,7 @@ export default function App() {
           <ThemeProvider theme={Theme()}>
             <Stack.Navigator initialRouteName='Home'>
               <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
-              <Stack.Screen name="Game" component={Game} />
+              <Stack.Screen name="Game" component={Game} options={{headerShown: false}} />
             </Stack.Navigator>
           </ThemeProvider>
         </NavigationContainer>
